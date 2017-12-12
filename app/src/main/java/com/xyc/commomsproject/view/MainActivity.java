@@ -1,7 +1,9 @@
-package com.xyc.commomsproject;
+package com.xyc.commomsproject.view;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.xyc.commomsproject.R;
 
 public class MainActivity extends AppCompatActivity {
 
