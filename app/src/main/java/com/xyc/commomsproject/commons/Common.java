@@ -6,4 +6,5 @@ package com.xyc.commomsproject.commons;
 
 public class Common {
     public static  boolean DEBUG = true;
+    public static final String URL = "";
 }
