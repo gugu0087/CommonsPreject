@@ -1,7 +1,7 @@
 package com.xyc.commomsproject.commons;
 
 import com.xyc.commomsproject.model.MaintainBoardsDto;
-import com.xyc.commomsproject.netService.netInteface.RxSubscriber;
+import com.xyc.commomsproject.netService.netInteface.LoadRxSubscriber;
 import com.xyc.commomsproject.netService.netManager.DataManager;
 
 import java.util.List;
@@ -24,7 +24,7 @@ public class LogicManager {
         return instance;
     }
     public void  getMainData(){
-        DataManager.getInstance().getApiService().getMaintainBordsList("1",10,1).subscribe(new RxSubscriber<List<MaintainBoardsDto>>() {
+        DataManager.getInstance().getApiService().getMaintainBordsList("1",10,1).subscribe(new LoadRxSubscriber<List<MaintainBoardsDto>>() {
             @Override
             protected void onSuccess(List<MaintainBoardsDto> response) {
 
