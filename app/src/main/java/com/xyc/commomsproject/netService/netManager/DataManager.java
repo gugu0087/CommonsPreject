@@ -26,8 +26,11 @@ public class DataManager {
         }
         return instance;
     }
+
     public static void updateQueryParams(Map<String, String> params) {
         mRetrofitClient.updateQueryParams(params);
     }
-
+     public NetApiService getApiService(){
+         return apiService;
+     }
 }
