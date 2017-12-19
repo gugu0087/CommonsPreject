@@ -1,4 +1,4 @@
-package com.xyc.commomsproject.netService.netManager;
+package com.xyc.commomsproject.logic.netService;
 
 import android.text.TextUtils;
 

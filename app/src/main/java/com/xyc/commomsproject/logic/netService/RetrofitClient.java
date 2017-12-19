@@ -1,6 +1,8 @@
-package com.xyc.commomsproject.netService.netManager;
+package com.xyc.commomsproject.logic.netService;
 
-import com.xyc.commomsproject.commons.Common;
+import android.util.Log;
+
+import com.xyc.commomsproject.commons.CommonUrl;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -20,6 +22,7 @@ public class RetrofitClient {
     private CommonParamsInterceptor cpInterceptor;
 
     public RetrofitClient(String url){
+        Log.d("xyc", "RetrofitClient: url="+url);
         mRetrofit = new Retrofit.Builder().baseUrl(url)
                 .client(initOkhttp())
                 .addConverterFactory(GsonConverterFactory.create())
@@ -28,7 +31,7 @@ public class RetrofitClient {
     }
     private OkHttpClient initOkhttp(){
      OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        if(Common.DEBUG){
+        if(CommonUrl.DEBUG){
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
             loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
             builder.addInterceptor(loggingInterceptor);

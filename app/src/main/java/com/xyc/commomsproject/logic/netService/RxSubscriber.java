@@ -1,4 +1,4 @@
-package com.xyc.commomsproject.netService.netInteface;
+package com.xyc.commomsproject.logic.netService;
 
 
 import java.util.List;

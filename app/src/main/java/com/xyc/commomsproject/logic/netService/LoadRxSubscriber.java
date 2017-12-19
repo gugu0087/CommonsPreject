@@ -1,4 +1,4 @@
-package com.xyc.commomsproject.netService.netInteface;
+package com.xyc.commomsproject.logic.netService;
 
 /**
  * Created by hasee on 2017/12/16.

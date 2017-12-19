@@ -1,4 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+//数据库当前版本号
+greendao {
+    schemaVersion 1
+    targetGenDir 'src/main/java'  //生成代码放的路径
+    daoPackage 'com.xyc.commomsproject.db.dao'
+}
 
 android {
     compileSdkVersion 25
@@ -35,5 +43,7 @@ dependencies {
     compile 'com.squareup.okio:okio:1.7.0'
     compile "com.squareup.okhttp3:okhttp:3.6.0"
     compile "com.squareup.okhttp3:logging-interceptor:3.6.0"
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.greenrobot:greendao:3.1.0'
     testCompile 'junit:junit:4.12'
 }

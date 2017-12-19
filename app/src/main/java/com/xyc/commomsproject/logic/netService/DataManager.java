@@ -1,7 +1,6 @@
-package com.xyc.commomsproject.netService.netManager;
+package com.xyc.commomsproject.logic.netService;
 
-import com.xyc.commomsproject.commons.Common;
-import com.xyc.commomsproject.netService.netInteface.NetApiService;
+import com.xyc.commomsproject.commons.CommonUrl;
 
 import java.util.Map;
 
@@ -16,7 +15,7 @@ public class DataManager {
     private NetApiService apiService;
 
     public DataManager() {
-        mRetrofitClient = new RetrofitClient(Common.URL);
+        mRetrofitClient = new RetrofitClient(CommonUrl.URL);
         apiService = mRetrofitClient.create(NetApiService.class);
     }
 
