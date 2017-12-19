@@ -26,7 +26,7 @@ public class LogicManager {
     }
 
     public void getUserResult() {
-        UserManager.getInstance().getUserResult();
+        //UserManager.getInstance().getUserResult();
     }
 
     public List<User> getUserList() {

@@ -45,13 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        LogicManager.getInstance().getUserResult();
-        sendResult.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        LogicManager.getInstance().getUserList();
     }
 
     @Override

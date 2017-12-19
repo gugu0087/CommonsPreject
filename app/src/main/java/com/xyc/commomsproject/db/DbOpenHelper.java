@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.xyc.commomsproject.db.dao.DaoMaster;
+import com.xyc.commomsproject.db.dao.UserDao;
 
 import org.greenrobot.greendao.database.Database;
 import org.greenrobot.greendao.database.StandardDatabase;
@@ -26,12 +27,15 @@ public class DbOpenHelper extends DaoMaster.OpenHelper {
         for(int i=oldVersion+1;i<=newVersion;i++){
             switch (i){
                 case 1:
+                   // upgradeToVersion1(database);
                     break;
                 default:
                     break;
-
             }
         }
+    }
+    private void upgradeToVersion1( Database database){
+        UserDao.createTable(database,true);
     }
 
 }

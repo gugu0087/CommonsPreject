@@ -5,7 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 import com.xyc.commomsproject.commons.ApplicationHolder;
 import com.xyc.commomsproject.db.dao.DaoMaster;
 import com.xyc.commomsproject.db.dao.DaoSession;
-import com.xyc.commomsproject.logic.model.User;
 import com.xyc.commomsproject.logic.user.UserDbManager;
 
 /**
